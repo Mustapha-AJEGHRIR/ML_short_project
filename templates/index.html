@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Water Quality</title>
+  </head>
+  <style>
+    body {
+      background-color: #d8ddde;
+    }
+    .main_container {
+      display: grid;
+      grid-template-rows: repeat(3, 0.4fr);
+      text-align: center;
+    }
+    .verdict_container {
+      height: 150px;
+      grid-row: 1;
+    }
+    .main_container {
+      grid-row: 2;
+    }
+    div label {
+      display: block;
+    }
+    input {
+      border-radius: 8px;
+      text-align: center;
+      font-size: large;
+      border: none;
+      box-shadow: 0 0 10px #b9b9b9;
+    }
+    form div {
+      padding: 5px 0px;
+    }
+    .submit_but input {
+      padding: 3px 6px;
+      cursor: pointer;
+    }
+    span.positive {
+      display: block;
+      padding: 50px;
+      margin: 50px;
+      background-color: rgb(184, 252, 184);
+      text-align: center;
+    }
+    span.negative {
+      display: block;
+      padding: 50px;
+      margin: 100px;
+      background-color: rgb(255, 194, 194);
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <div class="verdict_container">
+      {% if prediction %} {% if positive %}
+      <span class="positive">Positive, water is potable</span>
+      {% else %}
+      <span class="negative">Negative, water not potable</span>
+      {% endif %} {%endif%}
+    </div>
+
+    <div class="main_container">
+      <form action="/predict" method="post">
+        <div class="ph">
+          <label for="ph">ph</label>
+          <input type="text" name="ph" placeholder="7.2" value="7.2" id="ph" required />
+        </div>
+
+        <div class="Hardness">
+          <label for="Hardness">Hardness</label>
+          <input
+            type="text"
+            name="Hardness"
+            placeholder="180"
+            value="180"
+            id="Hardness"
+            required
+          />
+        </div>
+
+        <div class="Solids">
+          <label for="Solids">Solids</label>
+          <input
+            type="text"
+            name="Solids"
+            placeholder="23000"
+            value="23000"
+            id="Solids"
+            required
+          />
+        </div>
+
+        <div class="Chloramines">
+          <label for="Chloramines">Chloramines</label>
+          <input
+            type="text"
+            name="Chloramines"
+            placeholder="9.5"
+            value="9.5"
+            id="Chloramines"
+            required
+          />
+        </div>
+
+        <div class="Sulfate">
+          <label for="Sulfate">Sulfate</label>
+          <input
+            type="text"
+            name="Sulfate"
+            placeholder="160"
+            value="160"
+            id="Sulfate"
+            required
+          />
+        </div>
+
+        <div class="Conductivity">
+          <label for="Conductivity">Conductivity</label>
+          <input
+            type="text"
+            name="Conductivity"
+            placeholder="306"
+            value="306"
+            id="Conductivity"
+            required
+          />
+        </div>
+
+        <div class="Organic_carbon">
+          <label for="Organic_carbon">Organic_carbon</label>
+          <input
+            type="text"
+            name="Organic_carbon"
+            placeholder="11"
+            value="11"
+            id="Organic_carbon"
+            required
+          />
+        </div>
+
+        <div class="Trihalomethanes">
+          <label for="Trihalomethanes">Trihalomethanes</label>
+          <input
+            type="text"
+            name="Trihalomethanes"
+            placeholder="50"
+            value="50"
+            id="Trihalomethanes"
+            required
+          />
+        </div>
+
+        <div class="Turbidity">
+          <label for="Turbidity">Turbidity</label>
+          <input
+            type="text"
+            name="Turbidity"
+            placeholder="2.4"
+            value="2.4"
+            id="Turbidity"
+            required
+          />
+        </div>
+
+        <div class="submit_but">
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+  <!-- <script>
+    
+    sub_button = document.getElementById("submit")
+    sub_button.addEventListener('click', function() {
+        
+
+
+      }, false);
+
+
+  </script> -->
+</html>

@@ -1,6 +1,6 @@
 import sys, os
 import pandas as pd
-from flask import Flask, request
+from flask import Flask, request, redirect, render_template
 
 import jsonschema
 from jsonschema import validate
@@ -36,8 +36,8 @@ def validateJson(jsonData):
 
 app = Flask(__name__)
 
-@app.route('/predict', methods = ["GET"])
-def entry_point():
+@app.route('/predict_api', methods = ["GET"])
+def predict_api_api():
     data = dict(request.json)
     print(data)
     if validateJson(data):
@@ -46,6 +46,28 @@ def entry_point():
         return str(pred)
     else:
         return "Enter a valid format please"
+
+@app.route('/predict', methods = ["POST"])
+def predict_api():
+    data = dict(request.form)
+    data = dict([ (key, [float(value)]) for key, value in data.items() ])
+    print(data)
+    if validateJson(data):
+        df = pd.DataFrame(data)
+        pred = predict_and_save(df)
+        return render_template("index.html", prediction=True, positive = pred[0])
+    else:
+        return "Enter a valid format please"
+
+@app.route("/admin_dummy_password", methods = ["GET"])
+def retrain_api():
+    load_train_save()
+    return redirect('/')
+
+@app.route("/", methods=["GET"])
+def index():
+    return render_template("index.html", prediction=False)
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

@@ -10,7 +10,6 @@ sys.path.append("./libs") #In order to be able to solve relative path problems
 from libs.predict import predict_and_save
 from libs.train_model import load_train_save
 
-
 valide_json_schema = {
     "type": "object",
     "properties": {

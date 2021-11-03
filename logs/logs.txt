@@ -1,0 +1,37 @@
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator DummyClassifier from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator GradientBoostingClassifier from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator LabelEncoder from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:324: UserWarning: Trying to unpickle estimator VotingClassifier from version 0.24.2 when using version 1.0.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:438: UserWarning: X has feature names, but StandardScaler was fitted without feature names
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:438: UserWarning: X has feature names, but StandardScaler was fitted without feature names
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:438: UserWarning: X has feature names, but StandardScaler was fitted without feature names
+  warnings.warn(
+/usr/local/lib/python3.9/dist-packages/sklearn/base.py:438: UserWarning: X has feature names, but StandardScaler was fitted without feature names
+  warnings.warn(
+{'ph': [7.2], 'Hardness': [180.0], 'Solids': [23000.0], 'Chloramines': [9.5], 'Sulfate': [160.0], 'Conductivity': [306.0], 'Organic_carbon': [11.0], 'Trihalomethanes': [50.0], 'Turbidity': [2.4]}
+{'ph': [7.2], 'Hardness': [180.0], 'Solids': [23000.0], 'Chloramines': [9.5], 'Sulfate': [160.0], 'Conductivity': [306.0], 'Organic_carbon': [11.0], 'Trihalomethanes': [50.0], 'Turbidity': [2.4]}

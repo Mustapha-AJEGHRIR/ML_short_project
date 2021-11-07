@@ -67,6 +67,10 @@ def retrain_api():
 def index():
     return render_template("index.html", prediction=False)
 
+@app.route("/report", methods=["GET"])
+def report():
+    return render_template("report.html")
+
 
 if __name__ == '__main__':
     app.run(port=80, host='51.178.17.141')

@@ -6,7 +6,7 @@ The goal is to determine if a water sample is potable or not.
 
 # Disclaimer
 
-This dataset is only generate and it is not very realistic ! 
+This dataset is only generate and it is not very realistic ! Don't use it real life !
 
 # Composition
 

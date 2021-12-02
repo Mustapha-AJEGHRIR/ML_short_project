@@ -6,7 +6,7 @@ The goal is to determine if a water sample is potable or not.
 
 # Disclaimer
 
-This dataset is only generate and it is not very realistic ! 
+This dataset is only generate and it is not very realistic ! Don't use it real life !
 
 # Composition
 
@@ -18,4 +18,4 @@ This project is composed of :
 
 # Production
 
-Take note there is a branch called `prod` for production. Please take note, this was quick project, no authentication have been implemented, so any one who sends a "GET" request to `/admin_dummy_password` will retrain the model on the newly acquired data .
+Take note there is a branch called `prod` for production. Please take note, this was quick project, no authentication have been implemented, so any one who sends a "GET" request to `/admin_dummy_password` will retrain the model on the newly acquired data.
